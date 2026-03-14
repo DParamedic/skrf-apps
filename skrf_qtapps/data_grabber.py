@@ -1,6 +1,9 @@
 from qtpy import QtCore, QtWidgets
 
-from skrf_qtapps.skrf_qtwidgets import NetworkListWidget, NetworkPlotWidget, qt, widgets
+try:
+    from skrf_qtapps.skrf_qtwidgets import NetworkListWidget, NetworkPlotWidget, qt, widgets
+except ModuleNotFoundError:
+    from skrf_qtwidgets import NetworkListWidget, NetworkPlotWidget, qt, widgets
 
 
 class DataGrabber(QtWidgets.QWidget):

@@ -1,6 +1,9 @@
 from qtpy import QtCore, QtWidgets
 
-from skrf_qtapps.skrf_qtwidgets import NetworkPlotWidget, calibration_widgets, qt, widgets
+try:
+    from skrf_qtapps.skrf_qtwidgets import NetworkPlotWidget, calibration_widgets, qt, widgets
+except ModuleNotFoundError:
+    from skrf_qtwidgets import NetworkPlotWidget, calibration_widgets, qt, widgets
 
 
 class TRLWidget(QtWidgets.QWidget):

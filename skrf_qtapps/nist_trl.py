@@ -1,5 +1,5 @@
-import skrf_qtwidgets.networkPlotWidget
 from qtpy import QtCore, QtWidgets
+import skrf_qtwidgets.networkPlotWidget
 from skrf_qtwidgets import calibration_widgets, qt, widgets
 
 
